@@ -3,10 +3,10 @@ console.log("NOLIVE ACTIVATED");
 const hide = (el) => el && el.style.setProperty('display', 'none', 'important');
 
 const hideAll = () => {
-  const liveSection = document.getElementById('dp-live-events-carousel');
+  const liveSections = document.querySelectorAll('.dp-live-events-carousel, #dp-live-events-carousel');
   const heroModules = document.querySelectorAll('.dp-hero-live-event-module');
-  console.log('hideAll ran:', { liveSection, heroModulesCount: heroModules.length });
-  hide(liveSection);
+  console.log('hideAll ran:', { liveSectionsCount: liveSections.length, heroModulesCount: heroModules.length });
+  liveSections.forEach(hide);
   heroModules.forEach(hide);
 };
 
