@@ -1,0 +1,41 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 150px;
+    border: 10px solid #FF6400;
+    padding: 5px;
+    margin: 0;
+}
+
+p{
+    color: gray;
+    font-size: x-small;
+}
+
+.small{
+    font-size: xx-small;
+    
+}
+
+#tot{
+    color: red;
+}
+
+#counter{
+    color: red;
+    margin: auto;
+    display: block;
+    text-align: center;
+    font-size: 35pt;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    border: 1px solid gray;
+    padding: 2px;
+    color: brown;
+}
